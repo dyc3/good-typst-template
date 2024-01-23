@@ -1,0 +1,5 @@
+*.pdf
+changelog.csv
+*.jar
+./typst
+./typst.exe
