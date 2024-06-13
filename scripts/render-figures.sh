@@ -18,7 +18,7 @@ if [[ ${#commands_not_found[@]} -gt 0 ]]; then
 	exit 1
 fi
 
-MERMAID_VERSION_PIN="10.6.1"
+MERMAID_VERSION_PIN="10.9.1"
 
 if [[ $(mmdc --version) != "$MERMAID_VERSION_PIN" ]]; then
 	echo "ERROR: mmdc version $MERMAID_VERSION_PIN is required"
@@ -35,7 +35,7 @@ time find ./figures -type f -name "*.mmd" | parallel mmdc -i "{}" -c ./figures/m
 
 if [[ ! -f plantuml.jar ]]; then
 	echo "plantuml.jar could not be found, downloading..."
-	curl -L -o plantuml.jar https://github.com/plantuml/plantuml/releases/download/v1.2023.6/plantuml.jar
+	curl -L -o plantuml.jar https://github.com/plantuml/plantuml/releases/download/v1.2024.5/plantuml-1.2024.5.jar
 fi
 
 echo "Rendering PlantUML figures..."
