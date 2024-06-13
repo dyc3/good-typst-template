@@ -1,0 +1,5 @@
+[default.extend-words]
+Aquire = "Aquire" # font name used in slides
+
+[files]
+extend-exclude = ["*.svg", "*.bib", "*.ipynb"]
